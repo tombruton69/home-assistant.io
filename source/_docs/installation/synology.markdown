@@ -73,6 +73,25 @@ Hint: alternatively you can also create a "Shared Folder" via Synology WebUI (e.
 
 Create hass-daemon file using the following code (edit the variables in uppercase if necessary)
 
+This can be done using the command
+
+```bash
+touch hass-daemon
+```
+vi is installed on DSM by default so this can be used to edit the file
+
+If you have moved accross a hass-daemon file from Windows you might need to open vi press escape and enter
+
+```bash
+:set fileformat=unix
+```
+the save it using 
+
+```bash
+:wq!
+```
+
+
 ```bash
 #!/bin/sh
 
